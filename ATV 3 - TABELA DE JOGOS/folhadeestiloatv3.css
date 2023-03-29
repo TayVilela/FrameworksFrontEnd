@@ -1,0 +1,17 @@
+.bandeiras {
+    width: 40px;
+    height: auto;
+
+}
+
+.gradedogrupo{
+    background-color: white;
+    width: auto;
+    height: auto;
+    display: inline-block;
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
