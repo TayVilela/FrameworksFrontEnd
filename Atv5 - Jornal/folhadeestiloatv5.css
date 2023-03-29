@@ -1,0 +1,173 @@
+/* NOTÍCIA DESTAQUE DA HOME*/
+h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+/* NOTÍCIA EM UMA BOX DESTACADA*/
+h3{
+    font-size: 15px;
+    font-weight: 700;
+    left: 15px;
+    position: relative;
+}
+
+h4{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+p{
+    margin:0px;
+    font-weight: 700;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.detalheazulparatitulo::before{
+    color: #3ec2cf;
+    border-radius: 4px;
+    height: 100%; 
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+/* BARRA DE MENU */
+
+
+.barraDeMenu {
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    background-color: #fff;
+    border:1px solid #ccc;
+    padding:0px 15px 0px 15px;
+    box-shadow:1px 1px 8px grey;
+    align-items: center;
+    z-index: 2;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns:20% 60% 20%;
+    height:100%;
+    align-items:center;
+    max-width: 970px;
+    margin: auto;
+    box-align: center;
+}
+
+.areadebuscamenu {
+    color: #3ec2cf;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 250px;
+}
+
+.logonomenu {
+    display: flex;
+    justify-content:center;
+}
+
+.areadeloginmenu {
+    display: flex;
+    justify-content: right;
+    align-items:center;
+}
+
+/* MENU DA HOME */
+
+.container_home {
+    padding: 100px;
+    display: grid;
+    grid-template-columns:1fr repeat(12, minmax(auto, 4.5rem)) 1fr;
+    grid-template-areas: "col1 col2 col3";
+    column-gap: 1.5rem;
+}
+
+.coluna_esquerdadahome{
+    display: block;
+    grid-area: col1 / 2 / col1 / 5;
+}
+
+.boxazul{
+    background-color: #3ec2cf;
+    padding:15px;
+    padding-bottom: 8px;
+    margin:0px;
+    margin-bottom: 15px;
+
+}
+
+.bannerassinantes {
+    border: 2px solid #3ec2cf;
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-weight:bold;
+}
+ 
+h3::before{
+    content: "";
+    width: 7px;
+    height: 100%;
+    background-color:#3ec2cf;
+    position:absolute;
+    left: -15px;
+    border-radius: 4px;
+
+}
+
+.tituloMateriaPeqComImg{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "texto_materiaPeq foto_materiaPeq";
+    column-gap: 15px;
+    margin-bottom: 8px;
+}
+
+.texto_materiaPeq{
+    grid-area: texto_materiaPeq / texto_materiaPeq / texto_materiaPeq / texto_materiaPeq; 
+}
+
+.foto_materiaPeq{
+    grid-area: foto_materiaPeq / foto_materiaPeq / foto_materiaPeq / foto_materiaPeq;
+}
+
+.coluna_centraldahome{
+    display: block;
+    grid-area: col2 / 5 / col2 / 11;
+}
+
+.coluna_direitadahome{
+    display: block;
+    grid-area: col3 / 11 / col3 / 14;
+}
+
+.materiaEmLinha{
+    display: inline-block!important;
+}
+.categoria_damateria{
+    color: #3ec2cf;
+    font-weight: 780;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: 12px;
+}
+
+.separadorInferior {
+    border-bottom: 1px solid gray;
+    border-left: 8px;
+    
+}
